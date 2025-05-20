@@ -1,0 +1,17 @@
+/* App-level wrapper styles */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Padding around content area below the navbar */
+.content-wrapper {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+}
