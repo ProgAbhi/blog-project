@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL, // ✅ Vite users
+  baseURL: import.meta.env.VITE_API_URL + "/api", // ✅ Vite users
 });
 
 // Add token if logged in
