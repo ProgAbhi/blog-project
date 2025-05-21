@@ -7,6 +7,10 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("Backend API is running");
+});
+
 // Import Routes
 const authRoutes = require("./routes/auth");
 const postRoutes = require("./routes/posts");
