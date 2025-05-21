@@ -1,3 +1,10 @@
+.home-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #333;
+}
+
 .post-details {
   max-width: 700px;
   margin: 3rem auto;
@@ -25,7 +32,7 @@
 }
 
 .post-title {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 0.3rem;
   color: #1a1a1a;
 }
@@ -97,40 +104,43 @@
 
 /* Optional: make post responsive on smaller screens */
 @media (max-width: 768px) {
+
+  .home-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
   .post-details {
     padding: 1.5rem;
   }
 
   .post-title {
-    font-size: 2rem;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .post-author {
+    text-align: center;
+  }
+
+  .post-image {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 6px;
   }
 
   .post-content {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
   }
 
   .btn {
     padding: 0.5rem 1rem;
     font-size: 0.95rem;
-  }
-}
-
-
-@media (max-width: 768px) {
-   .home-title {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .post-title {
-        font-size: 0.8rem;
-        text-align: justify;
-    }
-    .post-image {
-    margin-bottom: 0;
-  }
-  .post-content-preview {
-    font-size: 0.8rem;
-    text-align: justify;
   }
 }
