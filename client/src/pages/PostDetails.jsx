@@ -30,14 +30,15 @@ function PostDetails() {
         ← Back to Home
       </button>
 
-      <h1 className="post-title">{post.title}</h1>
-      <p className="post-author">By {post.author.username}</p>
+      <h1 className="post-detail-title">{post.title}</h1>
    
       {/* Show image if it exists */}
       {post.image && (
         <img src={post.image} alt="Post" className="post-image" />
       )}
       <p className="post-content">{post.content}</p>
+
+      <p className="post-author">By {post.author.username}</p>
 
       {isAuthor && (
         <div className="post-actions">

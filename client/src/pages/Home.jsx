@@ -11,7 +11,7 @@ function Home() {
   }, []);
 
   const getPreview = (content) => {
-    return content.length > 200 ? content.substring(0, 200) + "..." : content;
+    return content.length > 100 ? content.substring(0, 100) + "..." : content;
   };
 
   return (

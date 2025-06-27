@@ -11,11 +11,13 @@
 
 .post-list {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   gap: 1.5rem;
 }
 
 .post-card {
+  flex: 0 0 calc(33.333% - 1rem);
   padding: 1rem;
   border-radius: 8px;
   background-color: #ffffff;
@@ -33,7 +35,7 @@
 }
 
 .post-title {
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
   color: #1a1a1a;
 }
@@ -68,4 +70,17 @@
 
 .read-more-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .home{
+    padding: 0;
+  }
+  .post-list{
+    gap: 0;
+  }
+  .post-card {
+    flex: 0 0 100%;
+    padding: 0 1rem;
+  }
 }
